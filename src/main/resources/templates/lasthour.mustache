@@ -1,0 +1,18 @@
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+</head>
+<body>
+
+<div> Информация о пользователях и формах за последний час: {{lastHour}}</div>
+<table>
+{{#data}}
+    <tr>
+        <td>
+            <div><u class="open-forms">{{key}}</u>: <span>{{value}}<br></span></div>
+        </td>
+    </tr>
+{{/data}}
+</table>
+</body>
+</html>
